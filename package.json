@@ -1,0 +1,26 @@
+{
+  "name": "playwright-api-framework",
+  "version": "1.0.0",
+  "description": "Generic Playwright + TypeScript framework for REST API test automation across multiple environments",
+  "main": "index.js",
+  "scripts": {
+    "test-dev": "TEST_ENV=dev npx playwright test && npx playwright show-report",
+    "test-sit": "TEST_ENV=sit npx playwright test && npx playwright show-report",
+    "test-uat": "TEST_ENV=uat npx playwright test && npx playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "api-testing",
+    "nodejs"
+  ],
+  "author": "Gurkirat Singh",
+  "dependencies": {
+    "playwright": "^1.42.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30",
+    "typescript": "^7.0.2"
+  }
+}
